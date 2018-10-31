@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_regular">20sp</dimen>
+    <dimen name="width_standar">125sp</dimen>
+    <dimen name="height_standar">125sp</dimen>
+    <dimen name="padding_left_standar">10sp</dimen>
+</resources>

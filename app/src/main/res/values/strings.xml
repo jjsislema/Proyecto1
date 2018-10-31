@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Proyecto1</string>
+    <string name="title_activity_lista_articulos">ListaArticulos</string>
+    <string name="art1">Alicate</string>
+    <string name="art2">Carretilla</string>
+    <string name="art3">Cautin</string>
+    <string name="art4">Cerrucho</string>
+    <string name="art5">Destornillador</string>
+    <string name="art6">Escardilla</string>
+    <string name="art7">Esmeril</string>
+    <string name="art8">Guandtes</string>
+    <string name="art9">Llave Inglesa</string>
+    <string name="art10">Machete</string>
+    <string name="art11">Mandarria</string>
+    <string name="art12">Martillo</string>
+    <string name="art13">Metro</string>
+    <string name="art14">Multimetro</string>
+    <string name="art15">Nivel</string>
+    <string name="art16">Pala</string>
+    <string name="art17">Pinza</string>
+    <string name="art18">Segueta</string>
+    <string name="art19">Socate</string>
+    <string name="art20">Taladro</string>
 </resources>

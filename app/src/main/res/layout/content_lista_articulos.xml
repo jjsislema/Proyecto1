@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListaArticulos"
+    tools:showIn="@layout/activity_lista_articulos">
+
+    <ImageView
+        android:id="@+id/articulo1"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+         />
+
+    <TextView
+        android:id="@+id/titleArt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo1" />
+    <ImageView
+        android:id="@+id/articulo2"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo1"
+        />
+
+    <TextView
+        android:id="@+id/titleArt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo2"
+        android:layout_below="@id/titleArt1"/>
+
+</RelativeLayout>
