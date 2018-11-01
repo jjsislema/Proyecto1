@@ -18,8 +18,10 @@
         </activity>
         <activity
             android:name=".ListaArticulos"
-            android:label="@string/title_activity_lista_articulos"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/title_activity_lista_articulos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 
