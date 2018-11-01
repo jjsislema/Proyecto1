@@ -4,4 +4,7 @@
     <dimen name="width_standar">125sp</dimen>
     <dimen name="height_standar">125sp</dimen>
     <dimen name="padding_left_standar">10sp</dimen>
+    <dimen name="textview_padding">10dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="textview_margin">20dp</dimen>
 </resources>
