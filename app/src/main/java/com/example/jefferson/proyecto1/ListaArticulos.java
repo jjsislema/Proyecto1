@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class ListaArticulos extends AppCompatActivity {
 
     private Articulo articulos [] = new Articulo [20];
+    private int[] imagenesId = new int[20];
+    private int[] textosId = new int[20];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +36,23 @@ public class ListaArticulos extends AppCompatActivity {
         //img.setImageResource(art.getSrc());
         //img.setContentDescription(art.getDescripcion());
         setList();
+        setImagenesid();
+        setTextosId();
         setViews();
 
     }
 
     //Seteo los imageView y los textView
     private void setViews (){
+        ImageView img;
+        TextView title;
+        for (int i = 0; i < 10; i++) {
+            img = findViewById(imagenesId[i]);
+            title = findViewById(textosId[i]);
+            img.setImageResource(articulos[i].getSrc());
+            title.setText(articulos[i].getDescripcion());
+        }
+        /*
         //art 1
         ImageView img = findViewById(R.id.articulo1);
         TextView title = findViewById(R.id.titleArt1);
@@ -50,6 +63,17 @@ public class ListaArticulos extends AppCompatActivity {
         title = findViewById(R.id.titleArt2);
         img.setImageResource(articulos[1].getSrc());
         title.setText(articulos[1].getDescripcion());
+        //art 3
+        img = findViewById(R.id.articulo3);
+        title = findViewById(R.id.titleArt3);
+        img.setImageResource(articulos[2].getSrc());
+        title.setText(articulos[2].getDescripcion());
+        //art 4
+        img = findViewById(R.id.articulo4);
+        title = findViewById(R.id.titleArt4);
+        img.setImageResource(articulos[3].getSrc());
+        title.setText(articulos[3].getDescripcion());
+        */
     }
 
     //Seteo el arreglo de los articulos
@@ -76,4 +100,33 @@ public class ListaArticulos extends AppCompatActivity {
         articulos[19] = new Articulo(R.string.art20,R.drawable.taladro);
     }
 
+    //seteo de los ids para las imageView
+    private void setImagenesid(){
+        imagenesId[0]=R.id.articulo1;
+        imagenesId[1]=R.id.articulo2;
+        imagenesId[2]=R.id.articulo3;
+        imagenesId[3]=R.id.articulo4;
+        imagenesId[4]=R.id.articulo5;
+        imagenesId[5]=R.id.articulo6;
+        imagenesId[6]=R.id.articulo7;
+        imagenesId[7]=R.id.articulo8;
+        imagenesId[8]=R.id.articulo9;
+        imagenesId[9]=R.id.articulo10;
+
+
+    }
+    //seteo de los id de los textView
+    private void setTextosId(){
+        textosId[0]=R.id.titleArt1;
+        textosId[1]=R.id.titleArt2;
+        textosId[2]=R.id.titleArt3;
+        textosId[3]=R.id.titleArt4;
+        textosId[4]=R.id.titleArt5;
+        textosId[5]=R.id.titleArt6;
+        textosId[6]=R.id.titleArt7;
+        textosId[7]=R.id.titleArt8;
+        textosId[8]=R.id.titleArt9;
+        textosId[9]=R.id.titleArt10;
+
+    }
 }
