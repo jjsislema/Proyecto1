@@ -34,6 +34,7 @@ public class ListaArticulos extends AppCompatActivity {
             }
         });
 
+
         //Articulo art = new Articulo("Alicate",R.drawable.alicate);
         //ImageView img = findViewById(R.id.art1);
         //img.setImageResource(art.getSrc());
@@ -44,6 +45,7 @@ public class ListaArticulos extends AppCompatActivity {
         setViews();
 
     }
+
 
     //Seteo los imageView y los textView
     private void setViews (){
@@ -79,6 +81,7 @@ public class ListaArticulos extends AppCompatActivity {
         title.setText(articulos[3].getDescripcion());
         */
     }
+
 
     //Seteo el arreglo de los articulos
     private void setList (){
