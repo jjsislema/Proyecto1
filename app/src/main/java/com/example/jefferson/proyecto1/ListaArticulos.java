@@ -112,8 +112,6 @@ public class ListaArticulos extends AppCompatActivity {
         imagenesId[7]=R.id.articulo8;
         imagenesId[8]=R.id.articulo9;
         imagenesId[9]=R.id.articulo10;
-
-
     }
     //seteo de los id de los textView
     private void setTextosId(){
@@ -127,6 +125,5 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[7]=R.id.titleArt8;
         textosId[8]=R.id.titleArt9;
         textosId[9]=R.id.titleArt10;
-
     }
 }

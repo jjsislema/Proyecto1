@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:padding = "35dp"
         android:layout_toRightOf="@id/articulo2"
-        android:layout_below="@id/titleArt1"/>
+        android:layout_below="@id/articulo1"/>
 
     <ImageView
         android:id="@+id/articulo3"
