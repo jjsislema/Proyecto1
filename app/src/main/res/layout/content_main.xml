@@ -11,7 +11,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -22,7 +23,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -33,7 +35,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -44,7 +47,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -55,7 +59,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -66,7 +71,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView6"
@@ -77,7 +83,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView7"
@@ -88,7 +95,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView8"
@@ -99,7 +107,8 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -110,6 +119,7 @@
         android:layout_margin="@dimen/textview_margin"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:text="@string/default_text_slot_cart"/>
+        android:text="@string/default_text_slot_cart"
+        android:onClick="clearTextView"/>
 
 </RelativeLayout>

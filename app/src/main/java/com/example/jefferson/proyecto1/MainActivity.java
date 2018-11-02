@@ -105,4 +105,9 @@ public class MainActivity extends AppCompatActivity {
         textView9.setText("");
 
     }
+
+    public void clearTextView(View view) {
+        TextView textView = (TextView) findViewById(view.getId());
+        textView.setText("");
+    }
 }
