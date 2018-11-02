@@ -75,4 +75,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Metodo para limpiar la lista del carrito de compras
+     *
+     * @param view Vista de la activity
+     */
+    public void clearList(View view) {
+
+        TextView textView0 = (TextView)findViewById(R.id.textView0);
+        TextView textView1 = (TextView)findViewById(R.id.textView1);
+        TextView textView2 = (TextView)findViewById(R.id.textView2);
+        TextView textView3 = (TextView)findViewById(R.id.textView3);
+        TextView textView4 = (TextView)findViewById(R.id.textView4);
+        TextView textView5 = (TextView)findViewById(R.id.textView5);
+        TextView textView6 = (TextView)findViewById(R.id.textView6);
+        TextView textView7 = (TextView)findViewById(R.id.textView7);
+        TextView textView8 = (TextView)findViewById(R.id.textView8);
+        TextView textView9 = (TextView)findViewById(R.id.textView9);
+
+        textView0.setText("");
+        textView1.setText("");
+        textView2.setText("");
+        textView3.setText("");
+        textView4.setText("");
+        textView5.setText("");
+        textView6.setText("");
+        textView7.setText("");
+        textView8.setText("");
+        textView9.setText("");
+
+    }
 }

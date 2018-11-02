@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textView10"
@@ -48,7 +49,8 @@
         android:layout_marginEnd="@dimen/btn_margin"
         android:layout_marginBottom="@dimen/btn_margin"
         android:text="@string/btn_clean_txt"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:onClick="clearList"/>
 
     <Button
         android:id="@+id/btn_add_art"
