@@ -48,7 +48,7 @@ public class ListaArticulos extends AppCompatActivity {
     private void setViews (){
         ImageView img;
         TextView title;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 20; i++) {
             img = findViewById(imagenesId[i]);
             title = findViewById(textosId[i]);
             img.setImageResource(articulos[i].getSrc());
@@ -115,6 +115,7 @@ public class ListaArticulos extends AppCompatActivity {
         imagenesId[7]=R.id.articulo8;
         imagenesId[8]=R.id.articulo9;
         imagenesId[9]=R.id.articulo10;
+
         imagenesId[10]=R.id.articulo11;
         imagenesId[11]=R.id.articulo12;
         imagenesId[12]=R.id.articulo13;
@@ -125,6 +126,7 @@ public class ListaArticulos extends AppCompatActivity {
         imagenesId[17]=R.id.articulo18;
         imagenesId[18]=R.id.articulo19;
         imagenesId[19]=R.id.articulo20;
+
 
     }
     //seteo de los id de los textView
@@ -139,6 +141,7 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[7]=R.id.titleArt8;
         textosId[8]=R.id.titleArt9;
         textosId[9]=R.id.titleArt10;
+
         textosId[10]=R.id.titleArt11;
         textosId[11]=R.id.titleArt12;
         textosId[12]=R.id.titleArt13;
