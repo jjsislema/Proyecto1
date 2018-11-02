@@ -112,7 +112,16 @@ public class ListaArticulos extends AppCompatActivity {
         imagenesId[7]=R.id.articulo8;
         imagenesId[8]=R.id.articulo9;
         imagenesId[9]=R.id.articulo10;
-
+        imagenesId[10]=R.id.articulo11;
+        imagenesId[11]=R.id.articulo12;
+        imagenesId[12]=R.id.articulo13;
+        imagenesId[13]=R.id.articulo14;
+        imagenesId[14]=R.id.articulo15;
+        imagenesId[15]=R.id.articulo16;
+        imagenesId[16]=R.id.articulo17;
+        imagenesId[17]=R.id.articulo18;
+        imagenesId[18]=R.id.articulo19;
+        imagenesId[19]=R.id.articulo20;
 
     }
     //seteo de los id de los textView
@@ -127,6 +136,15 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[7]=R.id.titleArt8;
         textosId[8]=R.id.titleArt9;
         textosId[9]=R.id.titleArt10;
-
+        textosId[10]=R.id.titleArt11;
+        textosId[11]=R.id.titleArt12;
+        textosId[12]=R.id.titleArt13;
+        textosId[13]=R.id.titleArt14;
+        textosId[14]=R.id.titleArt15;
+        textosId[15]=R.id.titleArt16;
+        textosId[16]=R.id.titleArt17;
+        textosId[17]=R.id.titleArt18;
+        textosId[18]=R.id.titleArt19;
+        textosId[19]=R.id.titleArt20;
     }
 }

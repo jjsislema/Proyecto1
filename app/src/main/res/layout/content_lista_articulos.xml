@@ -175,4 +175,174 @@
         android:layout_toRightOf="@id/articulo10"
         android:layout_alignTop="@id/articulo10" />
 
+    <ImageView
+        android:id="@+id/articulo11"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo10"
+        />
+    <TextView
+        android:id="@+id/titleArt11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt10"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo11"
+        android:layout_alignTop="@id/articulo11" />
+
+    <ImageView
+        android:id="@+id/articulo12"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo11"
+        />
+    <TextView
+        android:id="@+id/titleArt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt11"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo12"
+        android:layout_alignTop="@id/articulo12" />
+
+    <ImageView
+        android:id="@+id/articulo13"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo12"
+        />
+    <TextView
+        android:id="@+id/titleArt13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt12"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo13"
+        android:layout_alignTop="@id/articulo13" />
+
+    <ImageView
+        android:id="@+id/articulo14"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo13"
+        />
+    <TextView
+        android:id="@+id/titleArt14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt13"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo14"
+        android:layout_alignTop="@id/articulo14" />
+
+    <ImageView
+        android:id="@+id/articulo15"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo14"
+        />
+    <TextView
+        android:id="@+id/titleArt15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt14"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo15"
+        android:layout_alignTop="@id/articulo15" />
+
+    <ImageView
+        android:id="@+id/articulo16"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo15"
+        />
+    <TextView
+        android:id="@+id/titleArt16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt15"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo16"
+        android:layout_alignTop="@id/articulo16" />
+
+    <ImageView
+        android:id="@+id/articulo17"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo16"
+        />
+    <TextView
+        android:id="@+id/titleArt17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt16"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo17"
+        android:layout_alignTop="@id/articulo17" />
+
+    <ImageView
+        android:id="@+id/articulo18"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo17"
+        />
+    <TextView
+        android:id="@+id/titleArt18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt17"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo18"
+        android:layout_alignTop="@id/articulo18" />
+
+    <ImageView
+        android:id="@+id/articulo19"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo18"
+        />
+    <TextView
+        android:id="@+id/titleArt19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt18"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo19"
+        android:layout_alignTop="@id/articulo19" />
+
+    <ImageView
+        android:id="@+id/articulo20"
+        android:layout_width="@dimen/width_standar"
+        android:layout_height="@dimen/height_standar"
+        android:paddingLeft="@dimen/padding_left_standar"
+        android:paddingTop="5sp"
+        android:layout_below="@id/articulo19"
+        />
+    <TextView
+        android:id="@+id/titleArt20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleArt19"
+        android:padding = "35dp"
+        android:layout_toRightOf="@id/articulo20"
+        android:layout_alignTop="@id/articulo20" />
+
 </RelativeLayout>
