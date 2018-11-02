@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TuFerrteria.com</string>
+    <string name="app_name">TuFerreteria.com</string>
     <string name="title_activity_lista_articulos">Artículos Disponibles</string>
     <string name="art1">Alicate</string>
     <string name="art2">Carretilla</string>
