@@ -150,4 +150,7 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[18]=R.id.titleArt19;
         textosId[19]=R.id.titleArt20;
     }
+
+    public void agregarArticulo(View view) {
+    }
 }

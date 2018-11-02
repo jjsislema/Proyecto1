@@ -14,6 +14,7 @@
         android:layout_height="@dimen/height_standar"
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
+        android:onClick="agregarArticulo"
          />
 
     <TextView
