@@ -30,6 +30,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo1"
+        android:onClick="agregarArticulo"
         />
 
     <TextView
@@ -47,6 +48,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo2"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt3"
@@ -64,6 +66,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo3"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt4"
@@ -81,6 +84,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo4"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt5"
@@ -98,6 +102,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo5"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt6"
@@ -115,6 +120,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo6"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt7"
@@ -132,6 +138,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo7"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt8"
@@ -149,6 +156,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo8"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt9"
@@ -166,6 +174,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo9"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt10"
@@ -183,6 +192,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo10"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt11"
@@ -200,6 +210,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo11"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt12"
@@ -217,6 +228,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo12"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt13"
@@ -234,6 +246,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo13"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt14"
@@ -251,6 +264,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo14"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt15"
@@ -268,6 +282,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo15"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt16"
@@ -285,6 +300,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo16"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt17"
@@ -302,6 +318,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo17"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt18"
@@ -319,6 +336,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo18"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt19"
@@ -336,6 +354,7 @@
         android:paddingLeft="@dimen/padding_left_standar"
         android:paddingTop="5sp"
         android:layout_below="@id/articulo19"
+        android:onClick="agregarArticulo"
         />
     <TextView
         android:id="@+id/titleArt20"

@@ -1,5 +1,7 @@
 package com.example.jefferson.proyecto1;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 
 public class ListaArticulos extends AppCompatActivity {
 
+    public static final String EXTRA_REPLY = "com.example.android..extra.proyecto1.REPLY";
     private Articulo articulos [] = new Articulo [20];
     private int[] imagenesId = new int[20];
     private int[] textosId = new int[20];
@@ -50,6 +53,7 @@ public class ListaArticulos extends AppCompatActivity {
             img = findViewById(imagenesId[i]);
             title = findViewById(textosId[i]);
             img.setImageResource(articulos[i].getSrc());
+            img.setContentDescription(String.valueOf(i));
             title.setText(articulos[i].getDescripcion());
         }
         /*
@@ -151,6 +155,16 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[19]=R.id.titleArt20;
     }
 
-    public void agregarArticulo(View view) {
+    public Articulo getArticulo(int posicion){
+        return articulos[posicion];
+    }
+
+    public void agregarArticulo(View view ) {
+        int posicion = Integer.valueOf(  String.valueOf(view.getContentDescription()   ));
+        Articulo art = getArticulo(posicion);
+        Intent replyIntent = new Intent();
+        replyIntent.putExtra(EXTRA_REPLY,art);
+        setResult(Activity.RESULT_OK, replyIntent);
+        finish();
     }
 }

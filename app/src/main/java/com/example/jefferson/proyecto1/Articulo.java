@@ -1,6 +1,8 @@
 package com.example.jefferson.proyecto1;
 
-public class Articulo {
+import java.io.Serializable;
+
+public class Articulo implements Serializable {
     private int descripcion;
     private int src;
 
