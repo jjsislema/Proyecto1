@@ -48,7 +48,7 @@ public class ListaArticulos extends AppCompatActivity {
     private void setViews (){
         ImageView img;
         TextView title;
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             img = findViewById(imagenesId[i]);
             title = findViewById(textosId[i]);
             img.setImageResource(articulos[i].getSrc());
