@@ -85,6 +85,7 @@
         android:paddingTop="5sp"
         android:layout_below="@id/articulo4"
         android:onClick="agregarArticulo"
+
         />
     <TextView
         android:id="@+id/titleArt5"

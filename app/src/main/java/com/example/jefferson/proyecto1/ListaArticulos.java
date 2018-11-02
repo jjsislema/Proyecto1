@@ -1,6 +1,7 @@
 package com.example.jefferson.proyecto1;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListaArticulos extends AppCompatActivity {
 
@@ -45,6 +47,7 @@ public class ListaArticulos extends AppCompatActivity {
         setViews();
 
     }
+
 
 
     //Seteo los imageView y los textView
@@ -165,9 +168,18 @@ public class ListaArticulos extends AppCompatActivity {
     public void agregarArticulo(View view ) {
         int posicion = Integer.valueOf(  String.valueOf(view.getContentDescription()   ));
         Articulo art = getArticulo(posicion);
+        showToast(art);
         Intent replyIntent = new Intent();
         replyIntent.putExtra(EXTRA_REPLY,art);
         setResult(Activity.RESULT_OK, replyIntent);
         finish();
+    }
+
+    private void showToast(Articulo art){
+        Context context = getApplicationContext ();
+        int length=Toast.LENGTH_SHORT;
+        String texto="A seleccionado: "+ getString (art.getDescripcion());
+        Toast toast = Toast.makeText(context, texto, length);
+        toast.show();
     }
 }
