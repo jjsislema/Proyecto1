@@ -21,5 +21,8 @@
     <string name="art18">Segueta</string>
     <string name="art19">Socate</string>
     <string name="art20">Taladro</string>
-    <string name="shopping_btn_text">Agregar Artículos Disponibles</string>
+    <string name="btn_add_text">Agregar Artículos</string>
+    <string name="default_text_slot_cart"></string>
+    <string name="main_text">Artículos en el Carrito de Compras</string>
+    <string name="btn_clean_txt">Limpiar Lista</string>
 </resources>

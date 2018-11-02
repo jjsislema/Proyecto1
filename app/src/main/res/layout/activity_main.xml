@@ -7,45 +7,63 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:onClick="showList"
-        android:text="@string/shopping_btn_text"
-        android:layout_margin="@dimen/btn_margin" />
-
-    <Button
-        android:id="@+id/test"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickTest"
-        android:text="Prueba Instant State"
-        android:layout_above="@+id/button"
-        android:layout_margin="@dimen/btn_margin" />
-
     <TextView
-        android:id="@+id/textView0"
+        android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:textAlignment="center"
-        android:textStyle="bold"
+        android:layout_marginStart="@dimen/textview_margin"
+        android:layout_marginTop="@dimen/textview_margin"
+        android:layout_marginEnd="@dimen/textview_margin"
+        android:layout_marginBottom="@dimen/textview_margin"
         android:padding="@dimen/textview_padding"
-        android:layout_margin="@dimen/textview_margin" />
+        android:text="@string/main_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <ScrollView
+        android:id="@+id/scrollArt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView0"
-        android:padding="@dimen/textview_padding"
-        android:layout_margin="@dimen/textview_margin"
-        android:textAlignment="center"
-        android:textStyle="bold" />
+        android:fillViewport="false"
+        android:layout_below="@id/textView10"
+        android:layout_above="@id/btn_add_art"
+        >
+
+        <include layout="@layout/content_main" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_clean_cart"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/btn_margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:layout_marginEnd="@dimen/btn_margin"
+        android:layout_marginBottom="@dimen/btn_margin"
+        android:text="@string/btn_clean_txt"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_add_art"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_clean_cart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/btn_margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:layout_marginEnd="@dimen/btn_margin"
+        android:layout_marginBottom="@dimen/btn_margin"
+        android:onClick="showList"
+        android:text="@string/btn_add_text"
+        android:textAllCaps="false" />
 
 
 </RelativeLayout>

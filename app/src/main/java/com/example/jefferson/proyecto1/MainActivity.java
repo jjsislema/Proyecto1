@@ -10,15 +10,34 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private String textoEjemplo = "HOLA SOY SOLO UN EJEMPLO";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState != null){
-            TextView textView = (TextView)findViewById(R.id.textView0);
-            textView.setText(savedInstanceState.getString("txtTextView0"));
+            TextView textView0 = (TextView)findViewById(R.id.textView0);
+            TextView textView1 = (TextView)findViewById(R.id.textView1);
+            TextView textView2 = (TextView)findViewById(R.id.textView2);
+            TextView textView3 = (TextView)findViewById(R.id.textView3);
+            TextView textView4 = (TextView)findViewById(R.id.textView4);
+            TextView textView5 = (TextView)findViewById(R.id.textView5);
+            TextView textView6 = (TextView)findViewById(R.id.textView6);
+            TextView textView7 = (TextView)findViewById(R.id.textView7);
+            TextView textView8 = (TextView)findViewById(R.id.textView8);
+            TextView textView9 = (TextView)findViewById(R.id.textView9);
+
+            textView0.setText(savedInstanceState.getString("txtTextView0"));
+            textView1.setText(savedInstanceState.getString("txtTextView1"));
+            textView2.setText(savedInstanceState.getString("txtTextView2"));
+            textView3.setText(savedInstanceState.getString("txtTextView3"));
+            textView4.setText(savedInstanceState.getString("txtTextView4"));
+            textView5.setText(savedInstanceState.getString("txtTextView5"));
+            textView6.setText(savedInstanceState.getString("txtTextView6"));
+            textView7.setText(savedInstanceState.getString("txtTextView7"));
+            textView8.setText(savedInstanceState.getString("txtTextView8"));
+            textView9.setText(savedInstanceState.getString("txtTextView9"));
         }
     }
 
@@ -30,13 +49,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        TextView textView = (TextView)findViewById(R.id.textView0);
-        outState.putString( "txtTextView0" , textView.getText().toString() );
+
+        TextView textView0 = (TextView)findViewById(R.id.textView0);
+        TextView textView1 = (TextView)findViewById(R.id.textView1);
+        TextView textView2 = (TextView)findViewById(R.id.textView2);
+        TextView textView3 = (TextView)findViewById(R.id.textView3);
+        TextView textView4 = (TextView)findViewById(R.id.textView4);
+        TextView textView5 = (TextView)findViewById(R.id.textView5);
+        TextView textView6 = (TextView)findViewById(R.id.textView6);
+        TextView textView7 = (TextView)findViewById(R.id.textView7);
+        TextView textView8 = (TextView)findViewById(R.id.textView8);
+        TextView textView9 = (TextView)findViewById(R.id.textView9);
+
+        outState.putString( "txtTextView0" , textView0.getText().toString() );
+        outState.putString( "txtTextView1" , textView1.getText().toString() );
+        outState.putString( "txtTextView2" , textView2.getText().toString() );
+        outState.putString( "txtTextView3" , textView3.getText().toString() );
+        outState.putString( "txtTextView4" , textView4.getText().toString() );
+        outState.putString( "txtTextView5" , textView5.getText().toString() );
+        outState.putString( "txtTextView6" , textView6.getText().toString() );
+        outState.putString( "txtTextView7" , textView7.getText().toString() );
+        outState.putString( "txtTextView8" , textView8.getText().toString() );
+        outState.putString( "txtTextView9" , textView9.getText().toString() );
+
     }
 
-    public void onClickTest(View view){
-        TextView textView = (TextView)findViewById(R.id.textView0);
-        textView.setText(textoEjemplo);
-    }
 
 }
