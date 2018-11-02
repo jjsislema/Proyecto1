@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TuFerrteria.com</string>
+    <string name="app_name">TuFerreteria.com</string>
     <string name="title_activity_lista_articulos">Artículos Disponibles</string>
     <string name="art1">Alicate</string>
     <string name="art2">Carretilla</string>
@@ -21,5 +21,8 @@
     <string name="art18">Segueta</string>
     <string name="art19">Socate</string>
     <string name="art20">Taladro</string>
-    <string name="shopping_btn_text">Agregar Artículos Disponibles</string>
+    <string name="btn_add_text">Agregar Artículos</string>
+    <string name="default_text_slot_cart">sample</string>
+    <string name="main_text">Artículos en el Carrito de Compras</string>
+    <string name="btn_clean_txt">Limpiar Lista</string>
 </resources>
