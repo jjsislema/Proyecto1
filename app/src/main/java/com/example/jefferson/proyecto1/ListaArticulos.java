@@ -169,7 +169,7 @@ public class ListaArticulos extends AppCompatActivity {
     public void agregarArticulo(View view ) {
         int posicion = Integer.valueOf(  String.valueOf(view.getContentDescription()   ));
         Articulo art = getArticulo(posicion);
-        showToast(art);
+       // showToast(art);
         Intent replyIntent = new Intent();
         replyIntent.putExtra(EXTRA_REPLY,art);
         setResult(Activity.RESULT_OK, replyIntent);

@@ -1,6 +1,7 @@
 package com.example.jefferson.proyecto1;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -161,10 +163,22 @@ public class MainActivity extends AppCompatActivity {
                     //TextView textView = (TextView) findViewById(R.id.textView0);
                     TextView textView = obtenerTextViewVacio();
                     if (textView != null) {
+                        String message="A seleccionado: "+ getString (art.getDescripcion());
+                        showToast(message);
                         textView.setText(art.getDescripcion());
+                    }else {
+                        showToast("No hay espacio para nuevos articulos");
                     }
                 }
             }
         }
+    }
+
+    private void showToast(String message)
+    {
+        Context context = getApplicationContext ();
+        int length=Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, message, length);
+        toast.show();
     }
 }
