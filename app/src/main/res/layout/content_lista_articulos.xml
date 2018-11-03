@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ListaArticulos"
-    tools:showIn="@layout/activity_lista_articulos">
+    tools:showIn="@layout/activity_lista_articulos"
+    >
 
     <ImageView
         android:id="@+id/articulo1"
@@ -110,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt5"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo6"
         android:layout_alignTop="@id/articulo6" />
 
@@ -128,7 +129,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt6"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo7"
         android:layout_alignTop="@id/articulo7" />
 
@@ -146,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt7"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo8"
         android:layout_alignTop="@id/articulo8" />
 
@@ -164,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt8"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo9"
         android:layout_alignTop="@id/articulo9" />
 
@@ -182,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt9"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo10"
         android:layout_alignTop="@id/articulo10" />
 
@@ -200,7 +201,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt10"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo11"
         android:layout_alignTop="@id/articulo11" />
 
@@ -218,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt11"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo12"
         android:layout_alignTop="@id/articulo12" />
 
@@ -236,7 +237,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt12"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo13"
         android:layout_alignTop="@id/articulo13" />
 
@@ -254,7 +255,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt13"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo14"
         android:layout_alignTop="@id/articulo14" />
 
@@ -272,7 +273,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt14"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo15"
         android:layout_alignTop="@id/articulo15" />
 
@@ -290,7 +291,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt15"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo16"
         android:layout_alignTop="@id/articulo16" />
 
@@ -308,7 +309,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt16"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo17"
         android:layout_alignTop="@id/articulo17" />
 
@@ -326,7 +327,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt17"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo18"
         android:layout_alignTop="@id/articulo18" />
 
@@ -344,7 +345,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt18"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo19"
         android:layout_alignTop="@id/articulo19" />
 
@@ -362,7 +363,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt19"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo20"
         android:layout_alignTop="@id/articulo20" />
 

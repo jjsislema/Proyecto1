@@ -26,7 +26,7 @@ public class ListaArticulos extends AppCompatActivity {
         setContentView(R.layout.activity_lista_articulos);
        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        // setSupportActionBar(toolbar);
-
+        /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +35,7 @@ public class ListaArticulos extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        */
 
 
         //Articulo art = new Articulo("Alicate",R.drawable.alicate);
