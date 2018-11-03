@@ -8,7 +8,6 @@
     tools:context=".ListaArticulos"
     tools:showIn="@layout/activity_lista_articulos"
     >
-
     
     <ImageView
         android:id="@+id/articulo1"
