@@ -124,6 +124,32 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("");
     }
 
+    public TextView  obtenerTextViewVacio () {
+        for (int i= 0; i < 10 ; i ++){
+            TextView textView = decodificarTextView(i);
+            if (textView.getText() == ""){
+                return textView;
+            }
+        }
+        return null;
+    }
+
+    public TextView decodificarTextView (int i){
+        switch(i){
+            case 0: return (TextView) findViewById(R.id.textView0);
+            case 1: return (TextView) findViewById(R.id.textView1);
+            case 2: return (TextView) findViewById(R.id.textView2);
+            case 3: return (TextView) findViewById(R.id.textView3);
+            case 4: return (TextView) findViewById(R.id.textView4);
+            case 5: return (TextView) findViewById(R.id.textView5);
+            case 6: return (TextView) findViewById(R.id.textView6);
+            case 7: return (TextView) findViewById(R.id.textView7);
+            case 8: return (TextView) findViewById(R.id.textView8);
+            case 9: return (TextView) findViewById(R.id.textView9);
+            default: return null;
+        }
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -132,8 +158,11 @@ public class MainActivity extends AppCompatActivity {
                 Articulo art = (Articulo) data.getExtras().getSerializable(ListaArticulos.EXTRA_REPLY);
                 ///Log.d(LOG_TAG, "Mensaje_Reply: "+mensaje);
                 if (art != null) {
-                    TextView textView = (TextView) findViewById(R.id.textView0);
-                    textView.setText(art.getDescripcion());
+                    //TextView textView = (TextView) findViewById(R.id.textView0);
+                    TextView textView = obtenerTextViewVacio();
+                    if (textView != null) {
+                        textView.setText(art.getDescripcion());
+                    }
                 }
             }
         }
