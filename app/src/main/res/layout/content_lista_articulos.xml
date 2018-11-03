@@ -19,9 +19,9 @@
 
     <TextView
         android:id="@+id/titleArt1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo1" />
     <ImageView
         android:id="@+id/articulo2"
@@ -37,7 +37,7 @@
         android:id="@+id/titleArt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo2"
         android:layout_below="@id/articulo1"/>
 
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt2"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo3"
         android:layout_alignTop="@id/articulo3" />
 
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt3"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo4"
         android:layout_alignTop="@id/articulo4" />
 
@@ -85,13 +85,14 @@
         android:paddingTop="5sp"
         android:layout_below="@id/articulo4"
         android:onClick="agregarArticulo"
+
         />
     <TextView
         android:id="@+id/titleArt5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/titleArt4"
-        android:padding = "35dp"
+        style="@style/textos"
         android:layout_toRightOf="@id/articulo5"
         android:layout_alignTop="@id/articulo5" />
 
