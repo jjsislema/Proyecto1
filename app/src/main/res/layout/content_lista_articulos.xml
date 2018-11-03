@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_lista_articulos"
     >
 
+    
     <ImageView
         android:id="@+id/articulo1"
         android:layout_width="@dimen/width_standar"
