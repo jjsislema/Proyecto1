@@ -38,7 +38,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/btn_clean_cart"
+        android:id="@+id/btn_add_art"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,23 +48,23 @@
         android:layout_marginTop="@dimen/btn_margin"
         android:layout_marginEnd="@dimen/btn_margin"
         android:layout_marginBottom="@dimen/btn_margin"
-        android:text="@string/btn_clean_txt"
+        android:text="@string/btn_add_text"
         android:textAllCaps="false"
-        android:onClick="clearList"/>
+        android:onClick="showList"/>
 
     <Button
-        android:id="@+id/btn_add_art"
+        android:id="@+id/btn_clean_cart"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_clean_cart"
+        android:layout_above="@+id/btn_add_art"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="@dimen/btn_margin"
         android:layout_marginTop="@dimen/btn_margin"
         android:layout_marginEnd="@dimen/btn_margin"
         android:layout_marginBottom="@dimen/btn_margin"
-        android:onClick="showList"
-        android:text="@string/btn_add_text"
+        android:text="@string/btn_clean_txt"
+        android:onClick="clearList"
         android:textAllCaps="false" />
 
 
