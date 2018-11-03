@@ -175,7 +175,8 @@ public class ListaArticulos extends AppCompatActivity {
         finish();
     }
 
-    private void showToast(Articulo art){
+    private void showToast(Articulo art)
+    {
         Context context = getApplicationContext ();
         int length=Toast.LENGTH_SHORT;
         String texto="A seleccionado: "+ getString (art.getDescripcion());
