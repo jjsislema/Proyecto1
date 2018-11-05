@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
     private String textoEjemplo = "HOLA SOY SOLO UN EJEMPLO";
     private TextView artRequest;
     public static final int CHOOSE_ARTICULO_REQUEST = 1;
-    private static final String LOG_TAG = MainActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         if (savedInstanceState != null){
             TextView textView0 = (TextView)findViewById(R.id.textView0);
@@ -55,12 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //lanza  la segunda activity (ListaArticulos) para la seleccion del articulo
     public void showList(View view) {
         Intent intent = new Intent(this,ListaArticulos.class);
         //startActivity (intent);
         startActivityForResult(intent, CHOOSE_ARTICULO_REQUEST);
     }
 
+    //guarda el valor de los textview ante un cambio de configuracion
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -95,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param view Vista de la activity
      */
+
+    //Limpia todos los textview de la activity
     public void clearList(View view) {
 
         TextView textView0 = (TextView)findViewById(R.id.textView0);
@@ -121,11 +125,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //limpia el textview de la activity
     public void clearTextView(View view) {
         TextView textView = (TextView) findViewById(view.getId());
         textView.setText("");
     }
 
+    //Itera por todos los textview y retorna el primer textview vacio encontrado
     public TextView  obtenerTextViewVacio () {
         for (int i= 0; i < 10 ; i ++){
             TextView textView = decodificarTextView(i);
@@ -136,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
+    //retorna el textview correspondiente a un valor entero (parametro)
     public TextView decodificarTextView (int i){
         switch(i){
             case 0: return (TextView) findViewById(R.id.textView0);
@@ -152,21 +159,27 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //recibo el articulo seleccionado en la segunda activity (ListaArticulos)
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == CHOOSE_ARTICULO_REQUEST) {
             if (resultCode == Activity.RESULT_OK) {
                 Articulo art = (Articulo) data.getExtras().getSerializable(ListaArticulos.EXTRA_REPLY);
-                ///Log.d(LOG_TAG, "Mensaje_Reply: "+mensaje);
+                //verifico que el objeto no sea nulo
                 if (art != null) {
-                    //TextView textView = (TextView) findViewById(R.id.textView0);
+                    //obtengo el proximo textview vacio a llenar
                     TextView textView = obtenerTextViewVacio();
+                    //valido que el textView exista
                     if (textView != null) {
+                        //muestro un toast
                         String message="A seleccionado: "+ getString (art.getDescripcion());
                         showToast(message);
+                        //lleno el textview con la descripcion del articulo
                         textView.setText(art.getDescripcion());
                     }else {
+                        //muestor un toast
                         showToast("No hay espacio para nuevos articulos");
                     }
                 }
@@ -174,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //mostrar toast
     private void showToast(String message)
     {
         Context context = getApplicationContext ();

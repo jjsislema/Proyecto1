@@ -15,10 +15,11 @@ import android.widget.Toast;
 
 public class ListaArticulos extends AppCompatActivity {
 
+
     public static final String EXTRA_REPLY = "com.example.android..extra.proyecto1.REPLY";
-    private Articulo articulos [] = new Articulo [20];
-    private int[] imagenesId = new int[20];
-    private int[] textosId = new int[20];
+    private Articulo articulos [] = new Articulo [20]; //arreglo de articulos
+    private int[] imagenesId = new int[20]; //arreglo de ImageView de la Activity
+    private int[] textosId = new int[20]; //arreglo de textView de la Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +43,14 @@ public class ListaArticulos extends AppCompatActivity {
         //ImageView img = findViewById(R.id.art1);
         //img.setImageResource(art.getSrc());
         //img.setContentDescription(art.getDescripcion());
+
+        //Creo mis articulos
         setList();
+        //llenado de un arreglo con las ImageView del activity
         setImagenesid();
+        //llenado de un arreglo con los TextVIew del activity
         setTextosId();
+        //llenado de las ImageView y los TextViews con la descripcion de mis articulos
         setViews();
 
     }
@@ -162,10 +168,12 @@ public class ListaArticulos extends AppCompatActivity {
         textosId[19]=R.id.titleArt20;
     }
 
+    //obtener un articulo de la lista de articulos
     public Articulo getArticulo(int posicion){
         return articulos[posicion];
     }
 
+    //respuesta al Intent realizado por el MainActivity con el articulo seleccionado
     public void agregarArticulo(View view ) {
         int posicion = Integer.valueOf(  String.valueOf(view.getContentDescription()   ));
         Articulo art = getArticulo(posicion);
