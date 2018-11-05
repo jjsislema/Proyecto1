@@ -58,6 +58,10 @@ public class ListaArticulos extends AppCompatActivity {
 
 
     //Seteo los imageView y los textView
+    /**
+     *  @params nothing
+     *  @return nothing
+     */
     private void setViews (){
         ImageView img;
         TextView title;
@@ -94,6 +98,11 @@ public class ListaArticulos extends AppCompatActivity {
 
 
     //Seteo el arreglo de los articulos
+
+    /**
+     * @params nothing
+     * @return nothing
+     */
     private void setList (){
         articulos[0] = new Articulo(R.string.art1,R.drawable.alicate);
         articulos[1] = new Articulo(R.string.art2,R.drawable.carretilla);
@@ -118,6 +127,11 @@ public class ListaArticulos extends AppCompatActivity {
     }
 
     //seteo de los ids para las imageView
+
+    /**
+     *  @params nothing
+     *  @return nothing
+     */
     private void setImagenesid(){
         imagenesId[0]=R.id.articulo1;
         imagenesId[1]=R.id.articulo2;
@@ -144,6 +158,10 @@ public class ListaArticulos extends AppCompatActivity {
 
     }
     //seteo de los id de los textView
+    /**
+     *  @params nothing
+     *  @return nothing
+     */
     private void setTextosId(){
         textosId[0]=R.id.titleArt1;
         textosId[1]=R.id.titleArt2;
@@ -169,11 +187,19 @@ public class ListaArticulos extends AppCompatActivity {
     }
 
     //obtener un articulo de la lista de articulos
+    /**
+     *  @params int posicion
+     *  @return Articulo
+     */
     public Articulo getArticulo(int posicion){
         return articulos[posicion];
     }
 
     //respuesta al Intent realizado por el MainActivity con el articulo seleccionado
+    /**
+     *  @params View view
+     *  @return nothing
+     */
     public void agregarArticulo(View view ) {
         int posicion = Integer.valueOf(  String.valueOf(view.getContentDescription()   ));
         Articulo art = getArticulo(posicion);

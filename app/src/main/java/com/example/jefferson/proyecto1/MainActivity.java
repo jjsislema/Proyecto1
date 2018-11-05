@@ -56,12 +56,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //lanza  la segunda activity (ListaArticulos) para la seleccion del articulo
+    /**
+     *  @params View view
+     *  @return nothing
+     */
     public void showList(View view) {
         Intent intent = new Intent(this,ListaArticulos.class);
         //startActivity (intent);
         startActivityForResult(intent, CHOOSE_ARTICULO_REQUEST);
     }
 
+    /**
+     * @param outState
+     */
     //guarda el valor de los textview ante un cambio de configuracion
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -125,6 +132,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @param view
+     */
     //limpia el textview de la activity
     public void clearTextView(View view) {
         TextView textView = (TextView) findViewById(view.getId());
@@ -142,6 +152,10 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
+    /**
+     * @param i
+     * @return TextView
+     */
     //retorna el textview correspondiente a un valor entero (parametro)
     public TextView decodificarTextView (int i){
         switch(i){
@@ -159,6 +173,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     //recibo el articulo seleccionado en la segunda activity (ListaArticulos)
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -187,6 +206,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * @param message
+     */
     //mostrar toast
     private void showToast(String message)
     {
